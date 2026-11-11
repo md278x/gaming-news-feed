@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>md278x · Gaming News Feed</title>
+<style>
+  body { margin: 0; background: #0b0f1a; color: #e6ecff; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { margin: 0 0 4px; font-size: 1.6em; } h1 span { color: #5cc8ff; }
+  h2 { margin: 28px 0 10px; font-size: 1.1em; text-transform: uppercase; letter-spacing: .08em; color: #8a96b8; }
+  .meta { color: #8a96b8; font-size: .9em; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { padding: 10px 12px; margin: 8px 0; background: #121a2c; border-radius: 10px; border-left: 4px solid #555; }
+  li.nikke { border-color: #ff6fae; } li.tfd { border-color: #3dff9a; }
+  .tag { display: inline-block; font-size: .7em; font-weight: 800; letter-spacing: .1em; padding: 1px 7px; border-radius: 99px; margin-right: 6px; color: #0b0f1a; vertical-align: middle; }
+  .nikke .tag { background: #ff6fae; } .tfd .tag { background: #3dff9a; }
+  a { color: #e6ecff; font-weight: 600; text-decoration: none; } a:hover { text-decoration: underline; }
+  .sum { color: #b7c0dc; font-size: .92em; } .when { color: #8a96b8; font-size: .82em; font-family: ui-monospace, Consolas, monospace; }
+  code { background: #121a2c; padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <h1><span>md278x</span> · Gaming News Feed</h1>
+  <div class="meta">NIKKE &amp; The First Descendant · <span id="updated">loading…</span> · raw data: <a href="news.json">news.json</a></div>
+  <h2>Countdowns</h2><ul id="cds"></ul>
+  <h2>Headlines</h2><ul id="items"></ul>
+</main>
+<script>
+const TAG = { nikke: 'NIKKE', tfd: 'TFD' };
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const local = iso => iso ? new Date(iso).toLocaleString([], { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' }) + ' · ' + iso : '';
+fetch('news.json', { cache: 'no-store' }).then(r => r.json()).then(f => {
+  document.getElementById('updated').textContent = 'updated ' + local(f.updated);
+  const now = Date.now();
+  document.getElementById('cds').innerHTML = (f.countdowns || []).filter(c => Date.parse(c.target) > now - 3 * 3600e3)
+    .sort((a, b) => Date.parse(a.target) - Date.parse(b.target))
+    .map(c => `<li class="${esc(c.game)}"><span class="tag">${TAG[c.game] || esc(c.game)}</span><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.label)}</a><div class="when">${esc(local(c.target))}</div></li>`).join('') || '<li>No upcoming countdowns.</li>';
+  document.getElementById('items').innerHTML = (f.items || []).map(i => `<li class="${esc(i.game)}"><span class="tag">${TAG[i.game] || esc(i.game)}</span><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a><div class="sum">${esc(i.summary)}</div>${i.date ? `<div class="when">${esc(local(i.date))}</div>` : ''}</li>`).join('');
+}).catch(e => { document.getElementById('updated').textContent = 'could not load news.json (' + e.message + ')'; });
+</script>
+</body>
+</html>
