@@ -1,0 +1,26 @@
+{
+  "updated": "2026-11-11T03:57:00Z",
+  "items": [
+    {"game": "tfd", "title": "Season 4 Episode 2 \"Legacy\" arrives Nov 17 with new Descendant Monet", "summary": "Monet, \"The Knight Who Does Not Weep\", wields time; update dated Nov 17 (PT), exact time not yet announced.", "url": "https://x.com/FirstDescendant/status/2120063917271781740", "date": "2026-11-10T08:00:01Z"},
+    {"game": "tfd", "title": "Dev Live on Nov 15, 18:00 PST (Nov 16, 02:00 UTC)", "summary": "Official stream covering November's packed updates.", "url": "https://x.com/FirstDescendant/status/2118961652410306745", "date": "2026-11-16T02:00:00Z"},
+    {"game": "tfd", "title": "Spreading Breach event ends Nov 16, 22:59 PT", "summary": "Mutated Dimensional Stones can still drop a Transcendent Alignment Device; one week left.", "url": "https://x.com/FirstDescendant/status/2120048815596019753", "date": "2026-11-17T06:59:00Z"},
+    {"game": "tfd", "title": "Readjustment discounts end Nov 16, 22:59 PT", "summary": "Free first daily Readjustment and 50% Weekend Readjustment Discount end with the event period.", "url": "https://x.com/FirstDescendant/status/2118644560012447851", "date": "2026-11-17T06:59:00Z"},
+    {"game": "tfd", "title": "Dev Note vol.31: November plans", "summary": "Monet, Grappling Hook/Sub Module/Inversion improvements; winter decorations in the Dec 17 patch; Transcendent reroll fix Feb 2027.", "url": "https://tfd.nexon.com/en/news/3578339", "date": "2026-11-09T00:00:00Z"},
+    {"game": "tfd", "title": "Guide Quests end with the 11.17 (Tue) update", "summary": "In-progress Guide Quests auto-complete; rewards move into the Boost Path.", "url": "https://tfd.gameslantern.com/news/advance-info-on-the-end-of-the-guide-quest", "date": null},
+    {"game": "tfd", "title": "New Transcendent Weapon teased", "summary": "Official teaser: \"A new Transcendent Weapon is about to be unleashed.\"", "url": "https://x.com/FirstDescendant/status/2119716629982372306", "date": "2026-11-09T09:00:01Z"},
+    {"game": "tfd", "title": "Shop changes after the 11.17 update", "summary": "Ultimate Freyna Starter Bundle now leaves the shop 11.16 22:59 PST; other items extended or changed.", "url": "https://steamcommunity.com/app/2074920/allnews/", "date": "2026-11-17T06:59:00Z"},
+    {"game": "nikke", "title": "MARIA-n Story II PV (full version) released", "summary": "4th Anniversary story event MARIA-n continues; HD version on YouTube.", "url": "https://x.com/NIKKE_en/status/2120094950184583634", "date": "2026-11-10T10:03:20Z"},
+    {"game": "nikke", "title": "PC Launcher security incident: additional notice", "summary": "Launcher security measures completed Nov 4, 12:09 (UTC+9); follow the official security precautions.", "url": "https://x.com/NIKKE_en/status/2120182878143430985", "date": "2026-11-10T15:52:43Z"},
+    {"game": "nikke", "title": "Solo Raid: Goddess of Victory (Fire-weak) starts Nov 12", "summary": "Nov 12, 12:00 to Nov 19, 05:00 (UTC+9), per the Oct 29 patch notes.", "url": "https://nikke.gg/october-29-patch-notes/", "date": "2026-11-12T03:00:00Z"},
+    {"game": "nikke", "title": "4th Anniversary, MARIA-n & 14-day login events end Nov 19, 04:59 (UTC+9)", "summary": "Finish MARIA-n challenge missions for the 4th Anniversary Nikke Selection Box; event shop closes too.", "url": "https://nikke.gg/october-29-patch-notes/", "date": "2026-11-18T19:59:59Z"},
+    {"game": "nikke", "title": "Scarlet: Goddeath Pick Up recruitment live until Nov 26", "summary": "Began Nov 5, 05:00 (UTC+9); ends Nov 26, 04:59 (UTC+9).", "url": "https://x.com/NIKKE_en/status/2117783897006313562", "date": "2026-11-04T20:00:00Z"},
+    {"game": "nikke", "title": "4th Anniversary pop-up at Animate LA runs through Nov 14", "summary": "Themed pop-up and trick-art exhibition; plus Times Square ads and a Musinsa collab pop-up.", "url": "https://www.invenglobal.com/articles/28024/goddess-of-victory-nikke-celebrates-4th-anniversary-across-major-global-cities", "date": "2026-11-02T00:00:00Z"}
+  ],
+  "countdowns": [
+    {"game": "nikke", "label": "Solo Raid: Goddess of Victory starts", "target": "2026-11-12T03:00:00Z", "url": "https://nikke.gg/october-29-patch-notes/"},
+    {"game": "tfd", "label": "TFD Dev Live", "target": "2026-11-16T02:00:00Z", "url": "https://x.com/FirstDescendant/status/2118961652410306745"},
+    {"game": "tfd", "label": "Spreading Breach ends", "target": "2026-11-17T06:59:00Z", "url": "https://x.com/FirstDescendant/status/2120048815596019753"},
+    {"game": "nikke", "label": "MARIA-n & 4th Anniversary events end", "target": "2026-11-18T19:59:59Z", "url": "https://nikke.gg/october-29-patch-notes/"},
+    {"game": "nikke", "label": "Scarlet: Goddeath banner ends", "target": "2026-11-25T19:59:59Z", "url": "https://www.theclick.gg/nikke-scarlet-goddeath/"}
+  ]
+}
